@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5{
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 30px;
+  overflow: hidden;
 }
 header{
   display: flex;
@@ -69,9 +70,10 @@ footer i:hover{
 }
 
 /* media queries */
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1024px){
   .App{
     width: 1080px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 480px){
