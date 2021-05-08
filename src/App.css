@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,h3,h4,h5{
+  font-family: 'Poppins', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.poppins-heavy{
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 1440px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+main{
+  display: flex;
+  margin-top: 30px;
+}
+h2{
+  font-size: 3rem;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  padding-top: -10px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 1.5rem;
+}
+button{
+  margin-left: 40px;
+  height: 50px;
+  width: 145px;
+  border-radius: 50px;
+  padding: 10px 30px 10px 30px;
+  background-color: #fff;
+  border: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+button:hover{
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+footer{
+  float: right;
+  margin-right: 60px;
+}
+footer i{
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+footer i:hover{
+  color: hsl(300, 69%, 71%);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* media queries */
+@media screen and (max-width: 1080px){
+  .App{
+    width: 1080px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 480px){
+  .App{
+    width: 480px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
   }
+  header img{
+   
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  main{
+    flex-direction: column;
+  }
+  main img,h2,p{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h2,p,button{
+    text-align: center;
+  }
+  button{
+    margin-left: 160px;
+  }
+  footer{
+    margin-top: 30px;
+    margin-right: 195px;
+  }
+ 
 }
